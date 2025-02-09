@@ -1,10 +1,22 @@
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <h1>Notes App</h1>
+    <div className="app-container">
+      <form className="form-container">
+        <input
+          placeholder="note title"
+          required
+        ></input>
+        <textArea
+          placeholder="note content"
+          required
+        ></textArea>
+        <button type="submit">Add</button>
+      </form>
+    </div>
 
-  );
+  )
 }
 
-export default App;
+export default App
