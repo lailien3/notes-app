@@ -1,21 +1,23 @@
 import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="app-container">
-      <form className="form-container">
-        <input
-          placeholder="note title"
-          required
-        ></input>
-        <textArea
-          placeholder="note content"
-          required
-        ></textArea>
-        <button type="submit">Add</button>
+    <div className='app-container'>
+      <form className='note-form'>
+        <input placeholder='Title' required />
+        <textArea placeholder='Content' required />
+        <button type='submit'>Add Note</button>
       </form>
+      <div className='notes-grid'>
+        <div className='notesitem'>
+          <div className='notes-header'>
+            <button>x</button>
+          </div>
+          <h2>Note Title</h2>
+          <p>Note Content</p>
+        </div>
+      </div>
     </div>
-
   )
 }
 
